@@ -14,7 +14,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topCover" translatesAutoresizingMaskIntoConstraints="NO" id="dpp-oI-AYb">
-                    <rect key="frame" x="127" y="77" width="160" height="160"/>
+                    <rect key="frame" x="127" y="124" width="160" height="160"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="160" id="jnf-Dv-FDg"/>
                         <constraint firstAttribute="width" constant="160" id="kJ5-fH-hFo"/>
@@ -22,8 +22,9 @@
                 </imageView>
             </subviews>
             <constraints>
+                <constraint firstItem="dpp-oI-AYb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="00d-Ya-GNb" secondAttribute="top" constant="80" id="0gi-y1-SP8"/>
+                <constraint firstItem="dpp-oI-AYb" firstAttribute="centerY" secondItem="lVN-dc-81h" secondAttribute="centerY" priority="750" id="mFf-w8-mMk"/>
                 <constraint firstItem="dpp-oI-AYb" firstAttribute="centerX" secondItem="lVN-dc-81h" secondAttribute="centerX" id="nzu-lZ-g7T"/>
-                <constraint firstItem="dpp-oI-AYb" firstAttribute="centerY" secondItem="lVN-dc-81h" secondAttribute="centerY" id="wfb-PD-11g"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="00d-Ya-GNb"/>
             <point key="canvasLocation" x="-46.376811594202906" y="-30.803571428571427"/>

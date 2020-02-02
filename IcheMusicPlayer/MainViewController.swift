@@ -11,7 +11,7 @@ import UIKit
 class MainViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var items : [String] = ["StickyHeaderFlowLayout basic example", "Example to initialize in code", "Please Enjoy", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    var items : [String] = ["Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song"]
     
     var layout = StickyHeaderFlowLayout()
     
@@ -39,7 +39,7 @@ class MainViewController: UIViewController {
         let collectionParallaxHeaderNib = UINib(nibName: "CollectionParallaxHeader", bundle: nil)
         collectionView.register(collectionParallaxHeaderNib, forSupplementaryViewOfKind: StickyHeaderFlowLayout.parallaxHeaderIdentifier, withReuseIdentifier: "CollectionParallaxHeader")
         layout.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 300)
-        layout.parallaxHeaderMinimumReferenceSize = CGSize(width: self.view.frame.size.width, height: 260)
+        layout.parallaxHeaderMinimumReferenceSize = CGSize(width: self.view.frame.size.width, height: 0)
         
         // Setup Section Header.
         let collectionViewSectionHeaderNib = UINib(nibName: "CollectionViewSectionHeader", bundle: nil)

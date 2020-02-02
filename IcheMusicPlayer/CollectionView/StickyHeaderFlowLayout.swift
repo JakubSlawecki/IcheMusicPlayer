@@ -72,7 +72,7 @@ open class StickyHeaderFlowLayout: UICollectionViewFlowLayout {
     
     // The rect should compensate the header size
     var adjustedRect = rect
-    adjustedRect.origin.y -= self.parallaxHeaderReferenceSize.height
+    adjustedRect.origin.y = adjustedRect.origin.y - self.parallaxHeaderReferenceSize.height
     
     var allItems: [UICollectionViewLayoutAttributes] = []
     // Perform a deep copy of the attributes returned from super.
@@ -89,7 +89,8 @@ open class StickyHeaderFlowLayout: UICollectionViewFlowLayout {
     for item in allItems {
       let attributes = item
       var frame = attributes.frame
-      frame.origin.y += parallaxHeaderReferenceSize.height
+        // Adjust to my needs (button top constraint + button.height/2 = 55 )
+      frame.origin.y += parallaxHeaderReferenceSize.height - 55
       attributes.frame = frame
       
       let indexPath = attributes.indexPath
