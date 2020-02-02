@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		C669639023E706A400FFD7FD /* StickyHeaderFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C669638F23E706A400FFD7FD /* StickyHeaderFlowLayout.swift */; };
 		C669639223E706BC00FFD7FD /* StickyHeaderFlowLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C669639123E706BC00FFD7FD /* StickyHeaderFlowLayoutAttributes.swift */; };
+		C669639523E7088F00FFD7FD /* CollectionParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C669639423E7088F00FFD7FD /* CollectionParallaxHeader.swift */; };
+		C669639723E7095300FFD7FD /* CollectionViewSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C669639623E7095300FFD7FD /* CollectionViewSectionHeader.swift */; };
+		C669639923E70A5D00FFD7FD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C669639823E70A5D00FFD7FD /* CollectionViewCell.swift */; };
+		C669639B23E70A7B00FFD7FD /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C669639A23E70A7B00FFD7FD /* CollectionViewCell.xib */; };
+		C669639D23E70ADF00FFD7FD /* CollectionParallaxHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C669639C23E70ADF00FFD7FD /* CollectionParallaxHeader.xib */; };
+		C669639F23E70B3F00FFD7FD /* CollectionViewSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C669639E23E70B3F00FFD7FD /* CollectionViewSectionHeader.xib */; };
 		C69CC26C23E5BACC00564B63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69CC26B23E5BACC00564B63 /* AppDelegate.swift */; };
 		C69CC26E23E5BACC00564B63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69CC26D23E5BACC00564B63 /* SceneDelegate.swift */; };
 		C69CC27023E5BACC00564B63 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69CC26F23E5BACC00564B63 /* MainViewController.swift */; };
@@ -20,6 +26,12 @@
 /* Begin PBXFileReference section */
 		C669638F23E706A400FFD7FD /* StickyHeaderFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderFlowLayout.swift; sourceTree = "<group>"; };
 		C669639123E706BC00FFD7FD /* StickyHeaderFlowLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderFlowLayoutAttributes.swift; sourceTree = "<group>"; };
+		C669639423E7088F00FFD7FD /* CollectionParallaxHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionParallaxHeader.swift; sourceTree = "<group>"; };
+		C669639623E7095300FFD7FD /* CollectionViewSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSectionHeader.swift; sourceTree = "<group>"; };
+		C669639823E70A5D00FFD7FD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		C669639A23E70A7B00FFD7FD /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		C669639C23E70ADF00FFD7FD /* CollectionParallaxHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionParallaxHeader.xib; sourceTree = "<group>"; };
+		C669639E23E70B3F00FFD7FD /* CollectionViewSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewSectionHeader.xib; sourceTree = "<group>"; };
 		C69CC26823E5BACC00564B63 /* IcheMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IcheMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69CC26B23E5BACC00564B63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C69CC26D23E5BACC00564B63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +53,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C669639323E7085F00FFD7FD /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				C669639123E706BC00FFD7FD /* StickyHeaderFlowLayoutAttributes.swift */,
+				C669638F23E706A400FFD7FD /* StickyHeaderFlowLayout.swift */,
+				C669639423E7088F00FFD7FD /* CollectionParallaxHeader.swift */,
+				C669639C23E70ADF00FFD7FD /* CollectionParallaxHeader.xib */,
+				C669639623E7095300FFD7FD /* CollectionViewSectionHeader.swift */,
+				C669639E23E70B3F00FFD7FD /* CollectionViewSectionHeader.xib */,
+				C669639823E70A5D00FFD7FD /* CollectionViewCell.swift */,
+				C669639A23E70A7B00FFD7FD /* CollectionViewCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		C69CC25F23E5BACC00564B63 = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +90,7 @@
 				C69CC26B23E5BACC00564B63 /* AppDelegate.swift */,
 				C69CC26D23E5BACC00564B63 /* SceneDelegate.swift */,
 				C69CC26F23E5BACC00564B63 /* MainViewController.swift */,
-				C669638F23E706A400FFD7FD /* StickyHeaderFlowLayout.swift */,
-				C669639123E706BC00FFD7FD /* StickyHeaderFlowLayoutAttributes.swift */,
+				C669639323E7085F00FFD7FD /* CollectionView */,
 				C69CC27123E5BACC00564B63 /* Main.storyboard */,
 				C69CC27423E5BACD00564B63 /* Assets.xcassets */,
 				C69CC27623E5BACD00564B63 /* LaunchScreen.storyboard */,
@@ -131,8 +157,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C669639D23E70ADF00FFD7FD /* CollectionParallaxHeader.xib in Resources */,
 				C69CC27823E5BACD00564B63 /* LaunchScreen.storyboard in Resources */,
 				C69CC27523E5BACD00564B63 /* Assets.xcassets in Resources */,
+				C669639F23E70B3F00FFD7FD /* CollectionViewSectionHeader.xib in Resources */,
+				C669639B23E70A7B00FFD7FD /* CollectionViewCell.xib in Resources */,
 				C69CC27323E5BACC00564B63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,10 +174,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69CC27023E5BACC00564B63 /* MainViewController.swift in Sources */,
+				C669639523E7088F00FFD7FD /* CollectionParallaxHeader.swift in Sources */,
+				C669639923E70A5D00FFD7FD /* CollectionViewCell.swift in Sources */,
 				C669639223E706BC00FFD7FD /* StickyHeaderFlowLayoutAttributes.swift in Sources */,
 				C669639023E706A400FFD7FD /* StickyHeaderFlowLayout.swift in Sources */,
 				C69CC26C23E5BACC00564B63 /* AppDelegate.swift in Sources */,
 				C69CC26E23E5BACC00564B63 /* SceneDelegate.swift in Sources */,
+				C669639723E7095300FFD7FD /* CollectionViewSectionHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

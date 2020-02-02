@@ -14,13 +14,35 @@
                     <view key="view" contentMode="scaleToFill" id="bwy-IO-bLh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZXB-wC-W7j">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jpm-a8-9zr">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZXB-wC-W7j" firstAttribute="trailing" secondItem="Tmf-Jo-EWz" secondAttribute="trailing" id="H2C-dY-lnD"/>
+                            <constraint firstItem="ZXB-wC-W7j" firstAttribute="leading" secondItem="Tmf-Jo-EWz" secondAttribute="leading" id="Hmg-Ox-ksu"/>
+                            <constraint firstItem="ZXB-wC-W7j" firstAttribute="top" secondItem="bwy-IO-bLh" secondAttribute="top" id="TTI-UI-QpN"/>
+                            <constraint firstAttribute="bottom" secondItem="ZXB-wC-W7j" secondAttribute="bottom" id="YOb-S5-5CN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Tmf-Jo-EWz"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ZXB-wC-W7j" id="PBr-Rj-qcI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZo-bf-OeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-141" y="-91"/>
+            <point key="canvasLocation" x="-142.02898550724638" y="-91.071428571428569"/>
         </scene>
     </scenes>
 </document>
