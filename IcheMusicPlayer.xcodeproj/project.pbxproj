@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C669639023E706A400FFD7FD /* StickyHeaderFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C669638F23E706A400FFD7FD /* StickyHeaderFlowLayout.swift */; };
+		C669639223E706BC00FFD7FD /* StickyHeaderFlowLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C669639123E706BC00FFD7FD /* StickyHeaderFlowLayoutAttributes.swift */; };
 		C69CC26C23E5BACC00564B63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69CC26B23E5BACC00564B63 /* AppDelegate.swift */; };
 		C69CC26E23E5BACC00564B63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69CC26D23E5BACC00564B63 /* SceneDelegate.swift */; };
-		C69CC27023E5BACC00564B63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69CC26F23E5BACC00564B63 /* ViewController.swift */; };
+		C69CC27023E5BACC00564B63 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69CC26F23E5BACC00564B63 /* MainViewController.swift */; };
 		C69CC27323E5BACC00564B63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69CC27123E5BACC00564B63 /* Main.storyboard */; };
 		C69CC27523E5BACD00564B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69CC27423E5BACD00564B63 /* Assets.xcassets */; };
 		C69CC27823E5BACD00564B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69CC27623E5BACD00564B63 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C669638F23E706A400FFD7FD /* StickyHeaderFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderFlowLayout.swift; sourceTree = "<group>"; };
+		C669639123E706BC00FFD7FD /* StickyHeaderFlowLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderFlowLayoutAttributes.swift; sourceTree = "<group>"; };
 		C69CC26823E5BACC00564B63 /* IcheMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IcheMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69CC26B23E5BACC00564B63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C69CC26D23E5BACC00564B63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C69CC26F23E5BACC00564B63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C69CC26F23E5BACC00564B63 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C69CC27223E5BACC00564B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C69CC27423E5BACD00564B63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C69CC27723E5BACD00564B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			children = (
 				C69CC26B23E5BACC00564B63 /* AppDelegate.swift */,
 				C69CC26D23E5BACC00564B63 /* SceneDelegate.swift */,
-				C69CC26F23E5BACC00564B63 /* ViewController.swift */,
+				C69CC26F23E5BACC00564B63 /* MainViewController.swift */,
+				C669638F23E706A400FFD7FD /* StickyHeaderFlowLayout.swift */,
+				C669639123E706BC00FFD7FD /* StickyHeaderFlowLayoutAttributes.swift */,
 				C69CC27123E5BACC00564B63 /* Main.storyboard */,
 				C69CC27423E5BACD00564B63 /* Assets.xcassets */,
 				C69CC27623E5BACD00564B63 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C69CC27023E5BACC00564B63 /* ViewController.swift in Sources */,
+				C69CC27023E5BACC00564B63 /* MainViewController.swift in Sources */,
+				C669639223E706BC00FFD7FD /* StickyHeaderFlowLayoutAttributes.swift in Sources */,
+				C669639023E706A400FFD7FD /* StickyHeaderFlowLayout.swift in Sources */,
 				C69CC26C23E5BACC00564B63 /* AppDelegate.swift in Sources */,
 				C69CC26E23E5BACC00564B63 /* SceneDelegate.swift in Sources */,
 			);
