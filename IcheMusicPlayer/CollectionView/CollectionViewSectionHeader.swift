@@ -23,6 +23,7 @@ class CollectionViewSectionHeader: UICollectionReusableView {
     }
     
     func commonInit() {
+        self.backgroundColor = .clear
         //self.addSubview(label)
 //        label.frame = self.bounds
 //        label.text = UICollectionView.elementKindSectionHeader

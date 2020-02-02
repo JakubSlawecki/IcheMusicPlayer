@@ -36,14 +36,14 @@ class MainViewController: UIViewController {
         layout.itemSize = CGSize(width: view.frame.size.width, height: 44)
         
         // Setup Header.
-        collectionView.register(CollectionParallaxHeader.self, forSupplementaryViewOfKind: StickyHeaderFlowLayout.parallaxHeaderIdentifier, withReuseIdentifier: "CollectionParallaxHeader")
-        layout.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 200)
-        layout.parallaxHeaderMinimumReferenceSize = CGSize(width: self.view.frame.size.width, height: 160)
+        let collectionParallaxHeaderNib = UINib(nibName: "CollectionParallaxHeader", bundle: nil)
+        collectionView.register(collectionParallaxHeaderNib, forSupplementaryViewOfKind: StickyHeaderFlowLayout.parallaxHeaderIdentifier, withReuseIdentifier: "CollectionParallaxHeader")
+        layout.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 300)
+        layout.parallaxHeaderMinimumReferenceSize = CGSize(width: self.view.frame.size.width, height: 260)
         
         // Setup Section Header.
         let collectionViewSectionHeaderNib = UINib(nibName: "CollectionViewSectionHeader", bundle: nil)
         collectionView.register(collectionViewSectionHeaderNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "CollectionViewSectionHeader")
-        //collectionView.register(CollectionViewSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "CollectionViewSectionHeader")
         layout.headerReferenceSize = CGSize(width: view.frame.size.width, height: 80)
     }
 

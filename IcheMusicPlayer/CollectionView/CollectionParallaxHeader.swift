@@ -14,19 +14,29 @@ class CollectionParallaxHeader: UICollectionReusableView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .lightGray
-        self.clipsToBounds = true
-        
-        let bounds = CGRect(x: 0, y: 0, width: frame.maxX, height: frame.maxY)
-        let imageView = UIImageView(frame: bounds)
-        imageView.contentMode = .scaleAspectFill
-        imageView.image = UIImage(named: "topCover")
-        self.imageView = imageView
-        self.addSubview(imageView)
+//        self.backgroundColor = .lightGray
+//        self.clipsToBounds = true
+//
+//        let bounds = CGRect(x: 0, y: 0, width: frame.maxX, height: frame.maxY)
+//        let imageView = UIImageView(frame: bounds)
+//        imageView.contentMode = .scaleAspectFill
+//        imageView.image = UIImage(named: "topCover")
+//        self.imageView = imageView
+//        self.addSubview(imageView)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
+        self.backgroundColor = .lightGray
+               self.clipsToBounds = true
+               
+               let bounds = CGRect(x: 0, y: 0, width: frame.maxX, height: frame.maxY)
+               let imageView = UIImageView(frame: bounds)
+               imageView.contentMode = .scaleAspectFill
+               imageView.image = UIImage(named: "topCover")
+               self.imageView = imageView
+               self.addSubview(imageView)
     }
     
     override func layoutSubviews() {
