@@ -13,15 +13,46 @@ class MainViewController: UIViewController {
     
     var items : [String] = ["Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song", "Song"]
     
+    let song1 = Song(songTitle: "Jumpsuit", artist: "Twenty One Pilots")
+    let song2  = Song(songTitle: "Levitate", artist: "Twenty One Pilots")
+    let song3  = Song(songTitle: "Morph", artist: "Twenty One Pilots")
+    let song4  = Song(songTitle: "My Blood", artist: "Twenty One Pilots")
+    let song5  = Song(songTitle: "Chlorine", artist: "Twenty One Pilots")
+    let song6  = Song(songTitle: "Smithereens", artist: "Twenty One Pilots")
+    let song7  = Song(songTitle: "Neon Gravestones", artist: "Twenty One Pilots")
+    let song8  = Song(songTitle: "The Hype", artist: "Twenty One Pilots")
+    let song9  = Song(songTitle: "Nico and the Niners", artist: "Twenty One Pilots")
+    let song10 = Song(songTitle: "Cut My Lip", artist: "Twenty One Pilots")
+    let song11 = Song(songTitle: "Bandito", artist: "Twenty One Pilots")
+    let song12 = Song(songTitle: "Pet Cheetah", artist: "Twenty One Pilots")
+    let song13 = Song(songTitle: "Legend", artist: "Twenty One Pilots")
+    let song14 = Song(songTitle: "Leave The City", artist: "Twenty One Pilots")
+    
+    var album : [Song] = []
+    
     var layout = StickyHeaderFlowLayout()
     
     
-//    private var layout : StickyHeaderFlowLayout? {
-//        return collectionView?.collectionViewLayout as? StickyHeaderFlowLayout
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        album.append(song1)
+        album.append(song2)
+        album.append(song3)
+        album.append(song4)
+        album.append(song5)
+        album.append(song6)
+        album.append(song7)
+        album.append(song8)
+        album.append(song9)
+        album.append(song10)
+        album.append(song11)
+        album.append(song12)
+        album.append(song13)
+        album.append(song14)
+    
+        
+        
+        
         collectionView.collectionViewLayout = layout
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -32,13 +63,14 @@ class MainViewController: UIViewController {
         view.backgroundColor = .white
         
         // Setup Cell.
-        collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
-        layout.itemSize = CGSize(width: view.frame.size.width, height: 44)
+        let collectionViewCellNib = UINib(nibName: "CollectionViewCell", bundle: nil)
+        collectionView.register(collectionViewCellNib, forCellWithReuseIdentifier: "CollectionViewCell")
+        layout.itemSize = CGSize(width: view.frame.size.width, height: 63)
         
         // Setup Header.
         let collectionParallaxHeaderNib = UINib(nibName: "CollectionParallaxHeader", bundle: nil)
         collectionView.register(collectionParallaxHeaderNib, forSupplementaryViewOfKind: StickyHeaderFlowLayout.parallaxHeaderIdentifier, withReuseIdentifier: "CollectionParallaxHeader")
-        layout.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 300)
+        layout.parallaxHeaderReferenceSize = CGSize(width: self.view.frame.size.width, height: 350)
         layout.parallaxHeaderMinimumReferenceSize = CGSize(width: self.view.frame.size.width, height: 0)
         
         // Setup Section Header.
@@ -52,12 +84,12 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.items.count
+        return self.album.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-        cell.text = self.items[indexPath.row]
+        cell.song = self.album[indexPath.row]
         return cell
     }
     

@@ -9,38 +9,55 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var songTitleLabel: UILabel!
+    @IBOutlet weak var artistLabel: UILabel!
     
-    var text : String? {
+    var song: Song? {
         didSet {
-            self.reloadData()
+           self.reloadData()
         }
     }
     
-    private var textLabel : UILabel?
+//    var songTitle : String? {
+//        didSet {
+//            self.reloadData()
+//        }
+//    }
+//
+//    var artist : String? {
+//        didSet {
+//            self.reloadData()
+//        }
+//    }
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        backgroundColor = .black
-        
-        let bounds = CGRect(x: 0, y: 0, width: frame.maxX, height: frame.maxY)
-        let label = UILabel(frame: bounds)
-        label.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        self.textLabel = label
-        self.addSubview(label)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        backgroundColor = .black
+        
     }
     
     func reloadData() {
-        self.textLabel?.text = self.text
+        self.songTitleLabel.text = self.song?.songTitle
+        self.artistLabel.text = self.song?.artist
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.textLabel?.frame = self.bounds
     }
     
+}
+
+struct Song {
+    var songTitle : String = "Song title default"
+    var artist : String = "Default Artist"
+    
+    init(songTitle: String, artist: String) {
+        self.songTitle = songTitle
+        self.artist = artist
+    }
 }

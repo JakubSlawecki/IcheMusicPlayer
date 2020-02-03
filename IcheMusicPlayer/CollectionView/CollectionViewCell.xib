@@ -10,14 +10,38 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="eGg-RC-VEu" customClass="CollectionViewCell" customModule="IcheMusicPlayer" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="412" height="72"/>
+            <rect key="frame" x="0.0" y="0.0" width="412" height="63"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="USg-OJ-g3l">
-                <rect key="frame" x="0.0" y="0.0" width="412" height="72"/>
+                <rect key="frame" x="0.0" y="0.0" width="412" height="63"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOR-oB-oGv">
+                        <rect key="frame" x="20" y="8" width="81" height="21"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVh-EQ-k2q">
+                        <rect key="frame" x="20" y="37" width="38" height="18"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nVh-EQ-k2q" firstAttribute="top" secondItem="vOR-oB-oGv" secondAttribute="bottom" constant="8" id="bfz-en-5vn"/>
+                    <constraint firstItem="vOR-oB-oGv" firstAttribute="leading" secondItem="USg-OJ-g3l" secondAttribute="leading" constant="20" id="fz2-RN-QkB"/>
+                    <constraint firstItem="vOR-oB-oGv" firstAttribute="top" secondItem="USg-OJ-g3l" secondAttribute="top" constant="8" id="gdv-nh-7V8"/>
+                    <constraint firstItem="nVh-EQ-k2q" firstAttribute="leading" secondItem="vOR-oB-oGv" secondAttribute="leading" id="zJb-iq-cet"/>
+                </constraints>
             </collectionViewCellContentView>
-            <size key="customSize" width="412" height="72"/>
-            <point key="canvasLocation" x="-13.043478260869566" y="38.839285714285715"/>
+            <size key="customSize" width="412" height="63"/>
+            <connections>
+                <outlet property="artistLabel" destination="nVh-EQ-k2q" id="l5d-cb-gfc"/>
+                <outlet property="songTitleLabel" destination="vOR-oB-oGv" id="iNx-AT-eMR"/>
+            </connections>
+            <point key="canvasLocation" x="-13.043478260869566" y="-30.46875"/>
         </collectionViewCell>
     </objects>
 </document>
